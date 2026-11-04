@@ -1,0 +1,37 @@
+/* ==========================================================
+   File: styles.css
+   Purpose: Main stylesheet for the portfolio website
+   ========================================================== */
+
+/* Base page styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+/* Center the main content and limit its width */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Heading colors */
+h1,
+h2 {
+    color: #1f3a5f;
+}
+
+/* Space between sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Link color */
+a {
+    color: #0563c1;
+}
