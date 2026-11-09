@@ -1,37 +1,214 @@
-/* ==========================================================
-   File: styles.css
-   Purpose: Main stylesheet for the portfolio website
-   ========================================================== */
+/*
+    Author: Jayden Rassi
+    Date: 11/09/2026
+    File Name: styles.css
+    Description: Main style sheet for my portfolio website
+*/
 
-/* Base page styles */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+/* ===== CSS Reset ===== */
+/* Removes default browser spacing so the site looks the same in every browser */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, header, nav, main, section, article, aside, footer,
+h1, h2, h3, h4, p, ul, ol, li, figure, img, table, form, fieldset {
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #222222;
+    border: 0;
 }
 
-/* Center the main content and limit its width */
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Heading colors */
-h1,
-h2 {
-    color: #1f3a5f;
-}
-
-/* Space between sections */
-section {
-    margin-bottom: 30px;
-}
-
-/* Link color */
 a {
-    color: #0563c1;
+    color: inherit;
+}
+
+/* ===== Global Typography and Colors ===== */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #F7F7F7;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #1F3A5F;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* ===== Header and Navigation ===== */
+header {
+    background-color: #1F3A5F;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0.5em;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.25em 0.6em;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Shows which page the visitor is on */
+nav a.current {
+    border-bottom: 3px solid #0F766E;
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+
+.page-intro {
+    margin-bottom: 2em;
+}
+
+/* ===== Buttons ===== */
+.button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin: 0 0.5em 0.75em 0;
+    border: 2px solid #0F766E;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: #0F766E;
+    color: #FFFFFF;
+}
+
+.button-secondary {
+    background-color: #FFFFFF;
+    color: #0F766E;
+}
+
+/* ===== Home Page ===== */
+.hero {
+    display: grid;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.hero-photo {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.job-title {
+    font-size: 1.25em;
+    color: #0F766E;
+    font-weight: 600;
+}
+
+.featured h2 {
+    margin-bottom: 1em;
+}
+
+.project-list {
+    display: grid;
+    gap: 1.5em;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 1.25em;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5em;
+}
+
+.tech {
+    font-size: 0.875em;
+    color: #555555;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1F3A5F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5em 1em;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 0.25em;
+}
+
+/* ===== Tablet and Desktop Layout ===== */
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 2.75em;
+    }
+
+    /* Home page hero: text on the left, photo on the right */
+    .hero {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    /* Moves the photo to the right column on larger screens */
+    .hero-photo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* Featured projects: three cards side by side */
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
