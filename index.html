@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Author: Jayden Rassi
+    Date: 11/09/2026
+    File Name: index.html
+-->
+<html lang="en">
+<head>
+    <!-- Character set and mobile viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Jayden Rassi, a front end web development student.">
+    <meta name="author" content="Jayden Rassi">
+    <title>Home | Jayden Rassi</title>
+
+    <!-- Google Fonts: Poppins for headings, Inter for body text -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Poppins:wght@600;700&amp;display=swap">
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Site header with logo and main navigation -->
+    <header>
+        <a class="logo" href="index.html" title="Go to the Home page">Jayden Rassi</a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Hero: name, job title, short intro, buttons and photo -->
+        <section class="hero">
+            <figure class="hero-photo">
+                <img src="assets/jr-logo.svg" alt="Jayden Rassi initials logo" width="220" height="220">
+            </figure>
+            <div class="hero-text">
+                <h1>Jayden Rassi</h1>
+                <p class="job-title">Aspiring Front End Web Developer</p>
+                <p>Hi, I'm Jayden. I am a web development student at Broward College learning how to build websites with HTML, CSS, and JavaScript. I enjoy turning ideas into clean, easy to use pages that work on phones and computers.</p>
+                <p>This portfolio shows the projects I have built in class and the skills I am growing as I work toward a career in web development.</p>
+                <a class="button button-primary" href="projects.html">View My Projects</a>
+                <a class="button button-secondary" href="resume.html">View My Resume</a>
+            </div>
+        </section>
+
+        <!-- Featured projects -->
+        <section class="featured">
+            <h2>Featured Projects</h2>
+
+            <div class="project-list">
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>The website you are viewing now. I planned it with a site map and wireframes, then built it with semantic HTML and an external style sheet.</p>
+                    <p class="tech">HTML5, CSS3, GitHub Pages</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Course Schedule Table</h3>
+                    <p>A class schedule built as an HTML table. I used rowspan and colspan to group headings and CSS to add borders, shadows, and striped rows.</p>
+                    <p class="tech">HTML tables, CSS</p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Customer Payment Form</h3>
+                    <p>A checkout style form with labels for every field, fieldsets to group information, and a layout that changes from one column to two columns on larger screens.</p>
+                    <p class="tech">HTML forms, CSS Grid, media queries</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer>
+        <p>&copy; 2026 Jayden Rassi. All rights reserved.</p>
+        <p><a href="https://github.com/jayden0120">GitHub: jayden0120</a></p>
+    </footer>
+
+</body>
+</html>
