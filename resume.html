@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
     Author: Jayden Rassi
-    Date: 11/09/2026
+    Date: 11/16/2026
     File Name: resume.html
 -->
 <html lang="en">
@@ -9,7 +9,7 @@
     <!-- Character set and mobile viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume of Jayden Rassi.">
+    <meta name="description" content="Resume of Jayden Rassi, including work experience, education, and an audio introduction.">
     <meta name="author" content="Jayden Rassi">
     <title>Resume | Jayden Rassi</title>
 
@@ -40,8 +40,66 @@
     <main>
         <section class="page-intro">
             <h1>Resume</h1>
-            <p>My education, experience, and training in web development.</p>
+            <p>My experience, education, and training in web development.</p>
         </section>
+
+        <!-- Two column layout: sidebar on the left, resume sections on the right -->
+        <div class="resume-layout">
+
+            <aside class="resume-side">
+                <h2>Audio Introduction</h2>
+                <p>Listen to a short introduction about me.</p>
+                <audio controls>
+                    <source src="media/introduction.mp3" type="audio/mp3">
+                    <source src="media/introduction.ogg" type="audio/ogg">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+                <h3>Transcript</h3>
+                <p class="transcript">Hi, I'm Jayden Rassi. I'm a student at Broward College, learning front end web development with HTML, CSS, and JavaScript. I also work as a coordinator at T.J. Maxx in Davie, Florida, where I work with a team every day. On this website you can see my projects, my skills, and my resume. Thanks for listening, and feel free to reach out on my contact page.</p>
+
+                <h2>Contact</h2>
+                <p><a href="contact.html">Send me a message</a></p>
+                <p><a href="https://github.com/jayden0120">GitHub: jayden0120</a></p>
+            </aside>
+
+            <div class="resume-main">
+                <section class="resume-section">
+                    <h2>Summary</h2>
+                    <p>Web development student at Broward College with hands on experience building responsive websites with HTML5 and CSS3. Currently working as a coordinator at T.J. Maxx, where I work with a team to keep the store running smoothly.</p>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Work Experience</h2>
+                    <article>
+                        <h3>Coordinator</h3>
+                        <p class="resume-meta">T.J. Maxx, Davie, Florida | September 2025 to Present</p>
+                        <ul>
+                            <li>Coordinate daily tasks with team members to keep the store organized</li>
+                            <li>Help process and put away incoming merchandise</li>
+                            <li>Assist customers and support the sales floor during busy times</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Education</h2>
+                    <article>
+                        <h3>Broward College</h3>
+                        <p class="resume-meta">Current Student</p>
+                        <ul>
+                            <li>CTS1831C Web Authoring I (Fall 2026)</li>
+                            <li>COP2361C Object-Oriented Analysis and Design (Fall 2026)</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="resume-section">
+                    <h2>Technical Skills</h2>
+                    <p>HTML5, CSS3, responsive design, CSS Grid, HTML tables and forms, audio and video, JavaScript basics, GitHub Pages. See my <a href="skills.html">Skills page</a> for details.</p>
+                </section>
+            </div>
+
+        </div>
     </main>
 
     <!-- Site footer -->
