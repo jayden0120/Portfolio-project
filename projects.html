@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
     Author: Jayden Rassi
-    Date: 11/09/2026
+    Date: 11/16/2026
     File Name: projects.html
 -->
 <html lang="en">
@@ -9,7 +9,7 @@
     <!-- Character set and mobile viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects built by Jayden Rassi.">
+    <meta name="description" content="Projects built by Jayden Rassi, with a video walkthrough of his portfolio website.">
     <meta name="author" content="Jayden Rassi">
     <title>Projects | Jayden Rassi</title>
 
@@ -40,8 +40,78 @@
     <main>
         <section class="page-intro">
             <h1>Projects</h1>
-            <p>Here are the projects I have built while learning web development.</p>
+            <p>Here are the projects I have built while learning web development at Broward College.</p>
         </section>
+
+        <!-- Video walkthrough with captions for accessibility -->
+        <section class="video-section">
+            <h2>Website Walkthrough Video</h2>
+            <p>This short video gives a tour of every page on this website. Captions are turned on by default.</p>
+            <video controls poster="media/walkthrough-poster.jpg">
+                <source src="media/walkthrough.mp4" type="video/mp4">
+                <source src="media/walkthrough.webm" type="video/webm">
+                <track src="media/walkthrough.vtt" kind="captions" srclang="en" label="English Captions" default>
+                <p>Your browser does not support the video element.</p>
+            </video>
+        </section>
+
+        <!-- Two column layout: projects on the left, sidebar on the right -->
+        <div class="projects-layout">
+
+            <div class="project-details">
+                <article class="project">
+                    <h2>Portfolio Website</h2>
+                    <figure>
+                        <img src="media/home-screenshot.jpg" alt="Screenshot of the home page of Jayden Rassi's portfolio website" width="1280" height="720">
+                        <figcaption>The home page of my portfolio website.</figcaption>
+                    </figure>
+                    <p>The website you are viewing now. I planned it with a site map and wireframes, then built it with semantic HTML and one external style sheet. It is published with GitHub Pages.</p>
+                    <h3>What I Practiced</h3>
+                    <ul>
+                        <li>Semantic elements: header, nav, main, section, article, aside, and footer</li>
+                        <li>Mobile first design with a media query for larger screens</li>
+                        <li>CSS Grid layouts that change on each page</li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <h2>Course Schedule Table</h2>
+                    <p>A class schedule built as an HTML table. I used rowspan and colspan to group headings and CSS to add borders, shadows, and striped rows.</p>
+                    <h3>What I Practiced</h3>
+                    <ul>
+                        <li>Table elements: caption, thead, tbody, th, and td</li>
+                        <li>Striped rows with the nth-of-type() pseudo-class</li>
+                        <li>Using a table for data, not for page layout</li>
+                    </ul>
+                </article>
+
+                <article class="project">
+                    <h2>Customer Payment Form</h2>
+                    <p>A checkout style form with labels for every field, fieldsets to group information, and a layout that changes from one column to two columns on larger screens.</p>
+                    <h3>What I Practiced</h3>
+                    <ul>
+                        <li>Form controls: input, label, select, and textarea</li>
+                        <li>Input types such as email and tel</li>
+                        <li>The required attribute so the browser checks the form</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Sidebar with extra project information -->
+            <aside class="sidebar">
+                <h2>Project Notes</h2>
+                <p>All of these projects were created in CTS1831C Web Authoring I at Broward College.</p>
+                <h3>Tools I Used</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>GitHub and GitHub Pages</li>
+                    <li>W3C Markup Validation Service</li>
+                </ul>
+                <p><a class="button button-primary" href="https://github.com/jayden0120/Portfolio-project">View the Code on GitHub</a></p>
+            </aside>
+
+        </div>
     </main>
 
     <!-- Site footer -->
