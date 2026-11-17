@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
     Author: Jayden Rassi
-    Date: 11/09/2026
+    Date: 11/16/2026
     File Name: contact.html
 -->
 <html lang="en">
@@ -9,7 +9,7 @@
     <!-- Character set and mobile viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Jayden Rassi.">
+    <meta name="description" content="Contact Jayden Rassi using the contact form.">
     <meta name="author" content="Jayden Rassi">
     <title>Contact | Jayden Rassi</title>
 
@@ -39,9 +39,52 @@
     <!-- Main page content -->
     <main>
         <section class="page-intro">
-            <h1>Contact</h1>
-            <p>Have a question or an opportunity? I would love to hear from you.</p>
+            <h1>Contact Me</h1>
+            <p>Have a question or an opportunity? Fill out the form below and I will get back to you. Fields marked with * are required.</p>
         </section>
+
+        <!-- Contact form: every control has a label -->
+        <section class="contact-form">
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="954-555-1234">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="reason">Reason for Contacting *</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Choose one</option>
+                        <option value="job">Job opportunity</option>
+                        <option value="project">Question about a project</option>
+                        <option value="freelance">Freelance work</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </fieldset>
+
+                <input type="submit" class="button button-primary" value="Send Message">
+            </form>
+        </section>
+
+        <!-- Other ways to reach me -->
+        <aside class="contact-info">
+            <h2>Other Ways to Reach Me</h2>
+            <p>You can also find my work on <a href="https://github.com/jayden0120">GitHub</a>. I usually reply within two business days.</p>
+        </aside>
     </main>
 
     <!-- Site footer -->
