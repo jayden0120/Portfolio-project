@@ -1,0 +1,25 @@
+WEBVTT
+
+1
+00:00:00.200 --> 00:00:06.504
+This is my portfolio website. The home page introduces me and shows three featured projects.
+
+2
+00:00:07.204 --> 00:00:12.755
+The projects page describes what I built in class, and includes this video walkthrough.
+
+3
+00:00:13.455 --> 00:00:19.002
+The skills page uses an HTML table with striped rows to compare my technical skills.
+
+4
+00:00:19.702 --> 00:00:25.859
+My resume page lists my work experience and education, and includes an audio introduction.
+
+5
+00:00:26.559 --> 00:00:32.587
+The contact page has a form with labels, email and phone fields, a menu, and a message box.
+
+6
+00:00:33.287 --> 00:00:40.649
+I built this website with HTML and CSS, and published it with GitHub Pages. Thanks for watching.
