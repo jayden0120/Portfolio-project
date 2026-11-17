@@ -45,36 +45,40 @@
 
         <!-- Contact form: every control has a label -->
         <section class="contact-form">
+            <h2>Send Me a Message</h2>
             <form action="#" method="get">
 
-                <fieldset>
-                    <legend>Your Information</legend>
+                <!-- The two fieldsets sit side by side on larger screens -->
+                <div class="form-columns">
+                    <fieldset>
+                        <legend>Your Information</legend>
 
-                    <label for="fullname">Full Name *</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
 
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
 
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="954-555-1234">
-                </fieldset>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="954-555-1234">
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Your Message</legend>
+                    <fieldset>
+                        <legend>Your Message</legend>
 
-                    <label for="reason">Reason for Contacting *</label>
-                    <select id="reason" name="reason" required>
-                        <option value="">Choose one</option>
-                        <option value="job">Job opportunity</option>
-                        <option value="project">Question about a project</option>
-                        <option value="freelance">Freelance work</option>
-                        <option value="other">Other</option>
-                    </select>
+                        <label for="reason">Reason for Contacting *</label>
+                        <select id="reason" name="reason" required>
+                            <option value="">Choose one</option>
+                            <option value="job">Job opportunity</option>
+                            <option value="project">Question about a project</option>
+                            <option value="freelance">Freelance work</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </fieldset>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </fieldset>
+                </div>
 
                 <input type="submit" class="button button-primary" value="Send Message">
             </form>
